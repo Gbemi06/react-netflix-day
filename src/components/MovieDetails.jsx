@@ -6,7 +6,7 @@ const MovieDetails = () => {
   const params = useParams();
   console.log(params.movieId);
 
-  const [movie, setMovie] = useState(null);
+  const [movie, setMovie] = useState([]);
 
   useEffect(() => {
     getMovieDetails();
@@ -19,7 +19,7 @@ const MovieDetails = () => {
     const data = await response.json();
     console.log(data);
     setMovie(data);
-    console.log(movie.Title);
+    console.log(movie);
   };
 
   return (
