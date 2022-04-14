@@ -5,13 +5,11 @@ import Home from "./components/Home";
 import TvShows from "./components/TvShows";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MovieDetails from "./components/MovieDetails";
-import MyNavbar from "./components/MyNavbar";
 import MyFooter from "./components/MyFooter";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <MyNavbar />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
